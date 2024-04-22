@@ -1,0 +1,175 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+#navbar{
+    display: flex;
+    background: green;
+    align-items: center;
+    height: 60px;
+    position : sticky ; 
+    top : 0; 
+
+
+}
+h2{
+    margin: 10px;
+    font-family: Allura;
+    font-size : 1.7rem ; 
+    width: 15%;
+    color : white; 
+    text-shadow: 2px 2px 2px black ;
+}
+
+ul {
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+    align-items: center;
+    font-size : 1rem;
+
+
+}
+
+
+
+li{
+    list-style-type: none;
+}
+
+li:nth-child(1) {
+    background: white;;
+    padding: 10px;
+    color : green ;
+    font-weight: 500;
+}
+li:nth-child(2) {
+
+    background: white;;
+    padding: 10px;
+    color : green ;
+    font-weight: 500;
+}
+li:nth-child(3) {
+    background: white;;
+    padding: 10px;
+    color : green ;
+    font-weight: 500;
+}
+li:nth-child(4) {
+    background: white;;
+    padding: 10px;
+    color : green ;
+    font-weight: 500;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+/* header */
+header{
+    background: url("./assets/img/rio.png") center/cover no-repeat; 
+    height: 100vh;
+ 
+}
+
+header:before {
+    content:" " ; 
+    position : absolute ; 
+    height: 100%;
+    width: 100%;
+    top: 60px; 
+    left:0 ; 
+    bottom : 0; 
+    background: greenyellow;
+    opacity : 1; 
+    animation : anim 1s ease-in forwards ; 
+    animation-delay : 0.6s ; 
+
+}
+
+@keyframes anim {
+    to{
+        opacity : 0; 
+    }
+}
+
+.container{
+    display: flex;
+   min-height: 800px;
+margin : 0px auto ; 
+   align-items: center;
+   width: 85%;
+ 
+}
+
+.content {
+ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin :20px auto;
+}
+
+.content h2{
+    font-size : 4rem ; 
+    width: 300px;
+    text-align: center;
+}
+
+.content p {
+    color : white;
+    font-size : 0.9rem ; 
+    line-height: 1.5em;
+    width: 85%;
+}
+
+.content #btn {
+    background: white ; 
+    border : 2px solid green ;
+    padding: 10px 14px;
+    text-align: center;
+    width: 200px;
+    font-size : 1rem ; 
+    font-weight: 500;
+    cursor : pointer; 
+    position : relative ; 
+    z-index: 1000; 
+   
+}
+
+.custom {
+    position : absolute ;  
+    border-radius : 500px;
+ mix-blend-mode: difference;
+    transform : translate(-50% , -50%); 
+    z-index :1000; 
+ 
+}
+
+#cursor {
+height: 12px;
+width: 12px;
+background: orange;
+    
+}
+
+#unik{
+    height: 100px;
+    width: 100px;
+    background: rgb(143, 7, 7) ;
+   transition : 0.2s ease-out ; 
+
+}
+
+#uniTwo{
+    height: 250px;
+    width: 250px;
+    background: blue;
+    transition : 0.3s ease-out  ; 
+   
+}
